@@ -360,6 +360,9 @@ body{
   .schedule-section img{
     width: 100%;
   }
+  .ourclasses-section .training-section{
+    height: 400px
+  }
   .ourclasses-section .training-section .training-desc{
     padding-left: 10px
   }
@@ -486,7 +489,7 @@ body{
 }
 
 /* Start responsive price Section */
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .price-section .price-card{
     margin-bottom: 40px
   }
