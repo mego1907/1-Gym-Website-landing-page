@@ -1,0 +1,507 @@
+/* Start Global Rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+/* End Global Rules */
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden
+}
+/* Navbar Start */
+.navbar{
+    background-color: #000;
+}
+.navbar .navbar-brand{
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+.navbar .navbar-brand span{
+    color: #c11325;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #fff;
+    padding: 0 14px;
+    font-size: 18px
+}
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: #c11325
+}
+/* Navbar End */
+
+
+/* Header Start */
+.header{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: left left;
+    background-repeat: no-repeat;
+    position: relative
+}
+.header .row h1{
+    position: absolute;
+    top: 300px;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff
+}
+.header .row h1 span{
+    color: #c11325
+}
+.header .landing{
+  width: 25px;
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  display: block;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  overflow: hidden;
+}
+.header .landing i{
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+  animation: up-down 0.6s ease-in-out infinite;
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(-8px);
+  }
+  100%{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+.header .landing:hover{
+  border: 1px solid #c11325;
+  cursor: pointer
+}
+.header .landing:hover i{
+  color: #c11325
+}
+/* Header End */
+
+
+/* About-Section Start */
+.about-section{
+  padding: 70px 70px
+}
+.about-section .card-container{
+  overflow: hidden;
+}
+.about-section .card-container .card-heading img{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.about-section .card-container .card-body{
+  background-color: #222;
+  color: #fff
+}
+.about-section .card-container .card-body h4{
+  font-size: 22px;
+  padding: 9px;
+  font-weight: bold;
+}
+.about-section .card-container .card-body.active{
+  background-color: #c11325;
+}
+/* About-Section End */
+
+
+/* services-section Start */
+.services-section{
+  background-color: #c11325;
+  color: #fff;
+}
+.services-section .services-left-section{
+  margin: 60px 0;
+}
+.services-section .services-left-section h3{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 5px 0 15px
+}
+.services-section .services-left-section p{
+  padding: 0 0 10px
+}
+.services-section .services-left-section a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 9px 20px;
+  background-color: #222;
+}
+.services-section .services-left-section a:hover{
+  border: 1px solid #fff;
+  background: none;
+}
+.services-section .tabs-container{
+  margin: 68px 0;
+}
+.services-section .tabs-container .tab{
+    margin-bottom: 8px;
+}
+.services-section .tabs-container .tabs-heading{
+  background-color: rgba(0,0,0,0.2);
+  padding: 18px 18px;
+  position: relative;
+}
+.services-section .tabs-container .tabs-heading.active{
+  background-color: #222;
+}
+.services-section .tabs-container .tabs-heading h5{
+  font-weight: bold;
+  display: inline-block;
+}
+.services-section .tabs-container .tabs-heading i{
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 18px;
+  font-size: 14px;
+  color: #f5f5f5
+}
+.services-section .tabs-container .tabs-desc{
+  background-color: #222;
+  padding: 8px 18px;
+  margin-bottom: 8px;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+.services-section .tabs-container .tabs-desc.active{
+  display: block;
+}
+/* services-section End */
+
+
+/* Our Classes Section Start*/
+.ourclasses-section{
+  padding: 90px 0;
+}
+.ourclasses-section .col-md-6 h3{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.ourclasses-section .col-md-6 p{
+  font-size: 16px;
+  padding-bottom: 10px
+}
+.ourclasses-section .col-md-6 .ourclasses-card{
+  margin-bottom: 30px;
+  color: #fff;
+}
+.ourclasses-section .ourclasses-card:first-of-type .card-desc{
+  background-color: #222;
+}
+.ourclasses-section .ourclasses-card:last-of-type .card-desc{
+  background-color: #c11325
+}
+.ourclasses-section .ourclasses-card .card-desc h6{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 25px 0 10px;
+}
+.ourclasses-section .ourclasses-card .card-desc p{
+  font-size: 16px;
+  color: #fff;
+}
+.ourclasses-section .ourclasses-card .card-desc a{
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  color: #eee
+}
+.ourclasses-section .ourclasses-card .card-desc a:hover{
+  background-color: rgba(255, 255,255, 0.1);
+  transition: background-color 0.3s linear;
+}
+.ourclasses-section .col-md-6 .ourclasses-card .card-img-section{
+  position: relative;
+}
+.ourclasses-section .col-md-6 .ourclasses-card .card-img-section span{
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  z-index: 999;
+}
+.ourclasses-section .col-md-6 .ourclasses-card:first-of-type .card-img-section span{
+  background-color: #c11325;
+  top: 0;
+  left: 0;
+}
+.ourclasses-section .col-md-6 .ourclasses-card:last-of-type .card-img-section span{
+  background-color: #222;
+  top: 0;
+  right: 0;
+}
+.ourclasses-section .img-ourclasses img{
+  margin: 30px -30px;
+  transform: rotateY(180deg);
+}
+
+/* Training Section Start*/
+.ourclasses-section .training-section{
+  height: 350px;
+  width: 100%;
+  background-color: #222;
+  color: #eee;
+  overflow: hidden;
+  margin-top: 70px
+}
+.ourclasses-section .training-section .training-desc{
+  margin: 60px 0;
+}
+.ourclasses-section .training-section .training-desc h2{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 15px;
+}
+.ourclasses-section .training-section .training-desc p{
+  font-weight: 18px;
+}
+.ourclasses-section .training-section .training-desc a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 22px;
+  background-color: #c11325;
+  margin-top: 10px
+}
+.ourclasses-section .training-section .training-desc a:hover{
+  background-color: transparent;
+  border: 1px solid #fff
+}
+/* Training Section End*/
+
+/* Our Classes Section End*/
+
+
+/* Schedule Start */
+.schedule-section .schedule-container h3{
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 20px
+}
+.schedule-section .schedule-container p{
+  color: #000;
+  font-size: 16px
+}
+.schedule-section .table-container table, tr, td{
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 8px 12px;
+  color: #000;
+}
+.schedule-section .table-container  td:nth-child(1){
+  color: #fff;
+  font-weight: bold;
+}
+.schedule-section .table-container  td:nth-child(2){
+  font-weight: bold
+}
+.schedule-section .table-container  tr:nth-child(odd) td:first-child{
+  background-color: #444;
+}
+.schedule-section .table-container  tr:nth-child(even) td:first-child{
+  background-color: #222;
+}
+.schedule-section .table-container  tr:first-of-type td:first-child{
+  background-color: #c11325
+}
+/* Schedule End */
+
+
+/* Workout Gallery Start */
+.workout-section{
+  padding: 40px 0;
+}
+.workout-section h3{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 0 20px
+}
+.workout-section img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.workout-section img:hover{
+  filter: grayscale(0);
+}
+/* Workout Gallery End */
+
+
+/* Price Section Start*/
+.price-section{
+  padding: 20px 0 50px;
+  display: flex;
+}
+.price-section .price-heading{
+  margin: 0 auto;
+  padding: 0 0 50px
+}
+.price-section .price-heading h3{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 12px
+}
+.price-section .price-card .price-card-heading span{
+  padding: 17px 0;
+  background-color: #c11325;
+  display: block;
+  color: #ffff;
+  font-weight: 900;
+  font-size: 20px;
+}
+.price-section .price-card .price-card-heading img{
+  width: 100%;
+  height: 100%
+}
+.price-section .price-card .price-card-desc{
+  background-color: #f0f0f0;
+  padding-bottom: 34px
+}
+.price-section .price-card .price-card-desc h4{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 0 20px;
+}
+.price-section .price-card .price-card-desc p{
+  margin-bottom: 6px;
+}
+.price-section .price-card .price-card-desc p:last-of-type{
+  padding-bottom: 18px;
+}
+.price-section .price-card .price-card-desc a{
+  padding: 10px 21px;
+  background-color: #c11325;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0 12px
+}
+.price-section .price-card .price-card-desc a:hover{
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  transition: all 0.3s ease-in-out
+}
+/* Price Section End*/
+
+
+/* Contact Section Start */
+.contact-section{
+  background-color: #222;
+  color: #fff;
+  margin-top: 50px
+}
+.contact-section .row{
+  padding: 80px 0;
+}
+.contact-section .col-md-6 form input, textarea{
+  display: block;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 20px;
+  color: #fff
+}
+.contact-section .col-md-6 form input, textarea::placeholder{
+  color: #fff
+}
+.contact-section .col-md-6 form textarea{
+  margin-bottom: 40px
+}
+.contact-section .col-md-6 form a{
+  text-decoration: none;
+  padding: 12px 30px;
+  background-color: #c11325;
+  color: #fff;
+  overflow: hidden;
+}
+.contact-section .col-md-6 form a:hover{
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.contact-section .col-md-6 h3{
+  color: #c11325;
+  font-weight: 700;
+  padding: 0 0 20px
+}
+.contact-section .col-md-6 p{
+  font-size: 15px;
+  line-height: 20px
+}
+.contact-section .col-md-6 .icons{
+  list-style: none;
+}
+.contact-section .col-md-6 .icons li{
+  padding: 8px 0;
+  font-size: 16px
+}
+.contact-section .col-md-6 .icons li i{
+  color: #c11325;
+  font-size: 19px;
+  line-height: 20px;
+  padding: 0 30px 0 0;
+}
+.contact-section .col-md-6 .btn-icons{
+  display: flex;
+  list-style: none;
+  padding: 20px 0 30px;
+  border-bottom: 1px solid #333
+}
+.contact-section .col-md-6 .btn-icons li{
+  padding: 0;
+  background-color: #c11325;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+}
+.contact-section .col-md-6 .btn-icons li a i{
+  color: #fff;
+  font-size: 20px
+}
+.contact-section .col-md-6 .btn-icons li:hover{
+  background-color: transparent;
+  border: 1px solid #fff
+}
+.contact-section .col-md-6 .p-copyright{
+  font-weight: 700;
+  color: #ccc
+}
+/* Contact Section End*/
