@@ -368,6 +368,15 @@ body{
     padding-left: 10px
   }
 }
+
+@media (min-width: 768px) {
+  .ourclasses-section .img-ourclasses img{
+    width: 100%
+  }
+  .ourclasses-section .training-section .training-desc{
+    margin-top: 10px
+  }
+}
 /* End Responsive Our Classes Section */
 
 
@@ -407,6 +416,21 @@ body{
 .schedule-section .table-container  tr:first-of-type td:first-child{
   background-color: #c11325
 }
+
+/* Start Responsive Schedule Section */
+@media (min-width: 768px) {
+  .schedule-section{
+    overflow: hidden
+  }
+  .schedule-section .table-container table, tr, td{
+    padding: 8px 6px
+  }
+  .schedule-section img{
+    width: 100%
+  }
+}
+/* End Responsive Schedule Section */
+
 /* Schedule End */
 
 
@@ -431,6 +455,15 @@ body{
 .workout-section img:hover{
   filter: grayscale(0);
 }
+
+/* Start Responsive Workout Section */
+@media (min-width: 768px) {
+  .workout-section .col-md-6{
+    padding: 0
+  }
+}
+/* End Responsive Workout Section */
+
 /* Workout Gallery End */
 
 
@@ -494,6 +527,7 @@ body{
   .price-section .price-card{
     margin-bottom: 40px
   }
+  
 }
 /* End responsive price Section */
 /* Price Section End*/
