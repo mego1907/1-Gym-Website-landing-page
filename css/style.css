@@ -30,7 +30,7 @@ body{
 .navbar .navbar-nav .nav-item .nav-link{
     color: #fff;
     padding: 0 14px;
-    font-size: 18px
+    font-size: 19px
 }
 .navbar .navbar-nav .nav-item .nav-link:hover,
 .navbar .navbar-nav .nav-item .nav-link.active{
@@ -47,6 +47,26 @@ body{
   }
   .navbar .navbar-collapse .nav-item:hover .nav-item{
     color: #c11325
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-brand{
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .navbar .navbar-nav .nav-item .nav-link{
+    padding: 0 6px;
+    font-size: 17px
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-brand{
+    font-size: 1.7rem;
+    letter-spacing: 1.2px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link{
+    padding: 0 14px;
+    font-size: 19px
   }
 }
 /* End Responsive Navbar Section */
@@ -82,7 +102,7 @@ body{
   border-radius: 24px;
   display: block;
   position: absolute;
-  bottom: 90px;
+  bottom: 60px;
   left: 50%;
   overflow: hidden;
 }
@@ -121,6 +141,26 @@ body{
     font-size: 3rem
   }
 }
+@media (min-width: 768px) {
+  .header{
+    background-position: center center;
+  }
+  .header .landing{
+    bottom: 30px
+  }
+}
+@media (min-width: 992px) {
+  .header{
+    background-position: left left;
+  }
+  .header .row h1{
+    font-size: 6rem;
+    top: 250px
+  }
+  .header .landing{
+    bottom: 60px
+  }
+}
 /* End Rsponsive header Section */
 
 /* Header End */
@@ -128,7 +168,7 @@ body{
 
 /* About-Section Start */
 .about-section{
-  padding: 70px;
+  padding: 70px 0;
 }
 .about-section .card-container{
   overflow: hidden;
@@ -162,9 +202,20 @@ body{
     padding: 70px 0;
   }
 }
+@media (min-width: 768px) {
+  .about-section .card-container:last-of-type{
+    margin-bottom: 40px
+  }
+}
+@media (min-width: 992px) {
+  .about-section .card-container{
+    margin-bottom: 0;
+  }
+}
 /* End Responsive About section */
 
 /* About-Section End */
+
 
 
 /* services-section Start */
@@ -181,7 +232,7 @@ body{
   padding: 5px 0 15px
 }
 .services-section .services-left-section p{
-  padding: 0 0 10px
+  padding: 0 0 10px;
 }
 .services-section .services-left-section a{
   text-decoration: none;
@@ -210,7 +261,7 @@ body{
 }
 .services-section .tabs-container .tabs-heading h5{
   font-weight: bold;
-  display: inline-block;
+  display: block;
 }
 .services-section .tabs-container .tabs-heading i{
   display: inline-block;
@@ -224,18 +275,19 @@ body{
   background-color: #222;
   padding: 8px 18px;
   margin-bottom: 8px;
+  overflow: hidden;
   border-top: 0.1px solid rgba(255, 255, 255, 0.1);
-  display: none;
+  display: none
 }
 .services-section .tabs-container .tabs-desc.active{
-  display: block;
+  display: block
 }
 /* services-section End */
 
 
 /* Our Classes Section Start*/
 .ourclasses-section{
-  padding: 90px 0;
+  padding: 90px 0 0;
 }
 .ourclasses-section .col-md-6 h3{
   font-size: 24px;
@@ -323,7 +375,7 @@ body{
   padding: 0 0 15px;
 }
 .ourclasses-section .training-section .training-desc p{
-  font-weight: 18px;
+  font-size: 18px;
 }
 .ourclasses-section .training-section .training-desc a{
   text-decoration: none;
@@ -376,6 +428,27 @@ body{
   .ourclasses-section .training-section .training-desc{
     margin-top: 10px
   }
+  .ourclasses-section .col-md-6 .ourclasses-card{
+    overflow: hidden;
+  }
+  .ourclasses-section .ourclasses-card .card-desc h6{
+    padding: 15px 0 6px
+  }
+  .ourclasses-section .ourclasses-card .card-desc p{
+    font-size: 14px;
+    margin-bottom: 10px
+  }
+}
+@media (min-width: 992px) {
+  .ourclasses-section .ourclasses-card .card-desc h6{
+    padding: 25px 0 10px
+  }
+  .ourclasses-section .ourclasses-card .card-desc p{
+    font-size: 16px
+  }
+  .ourclasses-section .training-section .training-desc{
+    margin-top: 25px
+  }
 }
 /* End Responsive Our Classes Section */
 
@@ -384,6 +457,9 @@ body{
 
 
 /* Schedule Start */
+.schedule-section{
+  padding: 90px 0 0;
+}
 .schedule-section .schedule-container h3{
   color: #000;
   font-size: 30px;
@@ -436,7 +512,7 @@ body{
 
 /* Workout Gallery Start */
 .workout-section{
-  padding: 40px 0;
+  padding: 40px 0 0;
 }
 .workout-section h3{
   font-size: 30px;
@@ -469,7 +545,7 @@ body{
 
 /* Price Section Start*/
 .price-section{
-  padding: 20px 0 50px;
+  padding: 60px 0 50px;
   display: flex;
 }
 .price-section .price-heading{
