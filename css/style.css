@@ -151,10 +151,11 @@ body{
 }
 @media (min-width: 992px) {
   .header{
+    width: auto;
     background-position: left left;
   }
   .header .row h1{
-    font-size: 6rem;
+    font-size: 4rem;
     top: 250px
   }
   .header .landing{
@@ -273,15 +274,30 @@ body{
 }
 .services-section .tabs-container .tabs-desc{
   background-color: #222;
-  padding: 8px 18px;
   margin-bottom: 8px;
   overflow: hidden;
   border-top: 0.1px solid rgba(255, 255, 255, 0.1);
-  display: none
+  height:0;
+  padding: 0;
+  transition: all 0.2s linear
 }
 .services-section .tabs-container .tabs-desc.active{
-  display: block
+  height: 200px;
+  padding: 8px 18px;
 }
+
+/* Start Services Reponsive Section */
+@media (max-width: 767px) {
+  .services-section .tabs-container .tabs-desc.active{
+    height: 250px
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .services-section .tabs-container .tabs-desc.active{
+    height: 220px
+  }
+}
+/* End Services Reponsive Section */
 /* services-section End */
 
 
@@ -437,6 +453,12 @@ body{
   .ourclasses-section .ourclasses-card .card-desc p{
     font-size: 14px;
     margin-bottom: 10px
+  }
+  .ourclasses-section .training-section .training-desc h2{
+    font-size: 25px;
+  }
+  .ourclasses-section .training-section .training-desc p{
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) {

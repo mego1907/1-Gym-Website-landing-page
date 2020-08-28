@@ -1,42 +1,39 @@
+// Navbar item
+const navBtns = document.querySelectorAll(".navbar .navbar-nav .nav-item .nav-link");
+// Tab heading
 const tabHeading = document.querySelectorAll(".services-section .tab .tabs-heading");
-const tabDesc = document.querySelectorAll(".services-section .tab .tabs-desc");
+// Tab body
+const tabBody = document.querySelectorAll(".services-section .tab .tabs-desc");
+// Ta Icon
 const tabIcon = document.querySelector(".services-section .tab .tabs-heading i");
 let  i;
 
-console.log(tabHeading);
-console.log(tabDesc)
+// Add Active Class in Navbar item
+console.log(navBtns)
+navBtns.forEach((e) => {
+  e.addEventListener("click", () => {
+    e.classList.add("active");
+    e.classList.remove("active");
+  })
+})
 
-/*
-function addActive() {
-
-  for (var i = 0; i < tabHeading.length; i++) {
-    tabHeading[i].classList.toggle("active")
-  }
-
-  for (var i = 0; i < tabDesc.length; i++) {
-    tabDesc[i].classList.toggle("active")
-  }
-
-}
-*/
-
-
+// When I click On Tab Heading Tab Body Will Show
 tabHeading.forEach(function(tab, tab_index){
   tab.addEventListener("click", function() {
 
       tabHeading.forEach(function(tab) {
         tab.classList.remove("active");
-        tabIcon.classList.remove("active")
       });
 
     tab.classList.add("active");
-    tabIcon.classList.add("active")
 
-    tabDesc.forEach(function(content, content_index) {
-      if(content_index == tab_index){
-        content.style.display = "block";
+    tabBody.forEach(function(content, content_index) {
+      if(content_index === tab_index){
+        /* content.style.display = "block"; */
+        content.classList.add("active");
       }else {
-        content.style.display = "none";
+        /* content.style.display = "none"; */
+        content.classList.remove("active");
       }
     });
 
