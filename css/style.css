@@ -535,6 +535,7 @@ body{
 /* Workout Gallery Start */
 .workout-section{
   padding: 40px 0 0;
+  overflow: hidden;
 }
 .workout-section h3{
   font-size: 30px;
